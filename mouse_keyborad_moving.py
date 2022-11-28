@@ -2,9 +2,9 @@ import pyautogui
 import time
 import pyperclip
 
-print(pyautogui.size())
+#print(pyautogui.size())
 
-time.sleep(2) # 2초 대기
+#time.sleep(2) # 2초 대기
 #print(pyautogui.displayMousePosition()) # 실시간으로 마우스의 위치가 표시됨 (ctrl+C 로 멈춤)
 '''
 1번 실습
@@ -13,14 +13,14 @@ pyautogui.moveTo(958, 1049, 2) # x 958 y 1049 위치로 2초 간 이동
 pyautogui.click() # 마우스 좌클릭
 pyautogui.click(button = 'right') # 마우스 우클릭 => pyautogui.rightClick() 과 동일
 pyautogui.doubleClick() # 더블클릭 => pyautogui.click(clicks=2) 과 동일
-pyautogui.click(clicks=3, interval =1) # 3번 클릭, 1초 마다
+pyautogui.click(clicks=3, interval =1) # clicks : 클릭 횟수 / interval : 클릭 사이 간격
 '''
 '''
-2번 실습 : 
+#2번 실습 : 
 # 작업표시줄의 메모장을 맨 뒤로 옮기기
 time.sleep(2) # 2초 대기
-pyautogui.moveTo(958, 1049, 2)
-pyautogui.dragTo(1323, 1060, 2)
+pyautogui.moveTo(958, 1053, 1)
+pyautogui.dragRel(400, 0, duration = 1)
 '''
 
 '''
